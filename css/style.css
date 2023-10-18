@@ -1,0 +1,68 @@
+.container-fluid1 {
+    position: absolute;
+}
+
+.card-item {
+    position: relative;
+    border: 2px solid rgb(184, 215, 241);
+}
+
+.card-item ::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 30%;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(184, 208, 228);
+    opacity: 0;
+}
+
+.card-item :hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.img img {
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgb(14, 13, 13);
+    border-radius: 50%;
+    margin-top: 20px;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.card-item1 {
+    transition: all;
+}
+
+.card-item1:hover {
+    transform: scale(1.1);
+}
+
+.col img {
+    transition: 0.5s;
+}
+
+.col img:hover {
+    transform: scale(1.1);
+}
+
+.img1 img {
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgb(201, 190, 190);
+    border-radius: 50%;
+    margin-top: 10px;
+    opacity: 1;
+    margin-left: 100px;
+}
+
+.img1 p {
+    margin-top: -50px;
+    margin-left: 200px;
+}

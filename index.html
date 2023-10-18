@@ -1,0 +1,665 @@
+<html>
+
+<head>
+    <title>task3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-light  navbar-light ">
+
+
+        <img src="images/OIP (2).png" style="width:130px; height:60px;">
+
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="#">home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+             trips
+            </a>
+                <ul class="dropdown-menu" style="border: 2px solid rgb(129, 129, 252); border-radius: 10%; background-color: rgb(250, 239, 226);">
+                    <li> <a class="dropdown-item" href="#">egypt</a></li>
+                    <li> <a class="dropdown-item" href="#">aswan</a> </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li> <a class="dropdown-item" href="#">luxor</a> </li>
+                    <li> <a class="dropdown-item" href="#">sharm</a> </li>
+                    <li> <a class="dropdown-item" href="#">alex</a></li>
+                    <li> <a class="dropdown-item" href="#">more....</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">about</a>
+            </li>
+
+        </ul>
+
+        <form class="d-flex" role="search" style="margin-left: auto;">
+            <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success me-2" type="submit">Search</button>
+
+
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-primary me-2" data-toggle="modal" data-target="#myModal">
+    login
+  </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="border: 2px solid rgb(102, 175, 243); border-radius: 3%;">
+                        <div class="modal-header" style="border: 2px solid rgb(102, 175, 243);  background-color:rgb(102, 175, 243);">
+                            <h1 class="modal-title fs-5 text-white " id="exampleModalLabel">log in</h1>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <label for="exampleInputEmail1 " class="form-label text-info ">Email address</label>
+                            <input type="email" class="form-control" style="border: 2px solid rgb(102, 175, 243); " id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="modal-body">
+                            <label for="exampleInputPassword1 " class="form-label text-info">Password</label>
+                            <input type="password" class="form-control" style="border: 2px solid rgb(102, 175, 243); " id="exampleInputPassword1">
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                                <label class="form-check-label text-primary" for="flexSwitchCheckCheckedDisabled">remmember me</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary " data-dismiss="modal">log in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+
+
+
+    </nav>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+            <li data-target="#demo" data-slide-to="1" aria-label="Slide 2"></li>
+            <li data-target="#demo" data-slide-to="2" aria-label="Slide 3"></li>
+        </ul>
+
+
+
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+
+        <div class="carousel-inner ">
+            <div class="carousel-item active">
+                <img src="images/sharm.webp" class="d-block  w-100 ">
+
+                <div class="carousel-caption  ">
+                    <h3>sharm</h3>
+                    <p>We had such a great time </p>
+                    <button type="button" class="btn btn-primary ">visit us</button>
+
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <img src="images/hurghada.webp" class="d-block w-100">
+                <div class="carousel-caption  ">
+                    <h3>hurghada</h3>
+                    <p>We had such a great time</p>
+                    <button type="button" class="btn btn-primary ">visit us</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/egyptian.webp" class="d-block w-100">
+                <div class="carousel-caption  ">
+                    <h3>egypt</h3>
+                    <p>We had such a great time</p>
+                    <button type="button" class="btn btn-primary ">visit us</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="jumbotron jumbotron-fluid " style="background-color: rgb(230, 236, 253);">
+        <div class="container ">
+            <h1 style="color: rgb(153, 99, 223);">welcome</h1>
+            <p class="text-dark " style="font-size: 18px;">are you planing to visit egypt?sharm is the most popular alex, egypt</p>
+            <button type="button" class="btn btn-light text-dark text-bold " style="font-size: 20px; border: 2px solid rgb(153, 99, 224);">learn more</button>
+        </div>
+    </div>
+    <div class="container-fluid p-2 my-100 bg-info text-white" style="border: 2px solid white;">
+        <h2 style="margin-left: 450px; ">pepular destinations in egypt</h2>
+    </div>
+    <div class="container" style="margin-left: 1px;">
+        <div id="accordion" style="background-color: rgb(228, 230, 233);">
+            <div class="card" style="border: 2px solid rgb(140, 184, 241);">
+                <div class="card-header">
+                    <a class="collapsed  card-link text-dark" data-toggle="collapse" href="#collapseOne">
+                        giza city
+              </a>
+                </div>
+                <div id="collapseOne" class="collapse " data-parent="#accordion">
+                    <div class="card-body">
+                        giza has many attractions and tourist resorts that attract tourists from all over the worldGood trip
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="border: 2px solid  rgb(140, 184, 241);">
+                <div class="card-header">
+                    <a class="collapsed card-link  text-dark" data-toggle="collapse" href="#collapseTwo">
+             luxor city
+            </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        luxor has many attractions and tourist resorts that attract tourists from all over the worldGood trip
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="border: 2px solid rgb(140, 184, 241);">
+                <div class="card-header">
+                    <a class="collapsed card-link text-dark " data-toggle="collapse" href="#collapseThree">
+              alex city
+              </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        alex has many attractions and tourist resorts that attract tourists from all over the worldGood trip
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-2 my-100 bg-info text-white" style="border: 2px solid white;">
+        <h2 style="margin-left: 450px; ">translate from arabic to english</h2>
+    </div>
+    <div class="container  " style="margin-left: 10px;">
+        <div class="container-item">
+            <p style="color: rgb(10, 10, 10);">write and tranclate<button type="button" class="btn text-primary ">press here</button></p>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModall" data-placement="bottom" title="copied">
+           copy
+          </button>
+
+            <!-- The Modal -->
+            <div class="modal" id="myModall">
+                <div class="modal-dialog ">
+                    <div class="modal-content bg-dark">
+
+                        <!-- Modal body -->
+                        <div class="modal-body text-white">
+                            تم نسخ النص
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">ok</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" style="margin-top: 10px; border: 2px solid rgb(123, 123, 236); ">
+
+
+                <textarea class="form-control" rows="5" id="comment">tranclate</textarea>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-2 my-100 bg-info text-white" style="border: 2px solid white;">
+        <h2 style="margin-left: 450px; ">translate from arabic to frensh</h2>
+    </div>
+    <div class="container  " style="margin-left: 10px;">
+        <p style="color: rgb(10, 10, 10);">write and tranclate<button type="button" class="btn text-primary ">press here</button></p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModall" data-placement="bottom" title="copied">
+           copy
+          </button>
+
+        <!-- The Modal -->
+        <div class="modal" id="myModall">
+            <div class="modal-dialog ">
+                <div class="modal-content bg-dark">
+
+                    <!-- Modal body -->
+                    <div class="modal-body text-white">
+                        تم نسخ النص
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">ok</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="form-group" style="margin-top: 10px; border: 2px solid rgb(123, 123, 236); ">
+
+
+            <textarea class="form-control" rows="5" id="comment">tranclate</textarea>
+        </div>
+    </div>
+    <div class="container-fluid p-2 my-100 bg-info text-white" style="border: 2px solid white;">
+        <h2 style="margin-left: 450px; ">translate from arabic to german</h2>
+    </div>
+    <div class="container  " style="margin-left: 10px;">
+        <p style="color: rgb(10, 10, 10);">write and tranclate<button type="button" class="btn text-primary ">press here</button></p>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModall" data-placement="bottom" title="copied">
+           copy
+          </button>
+
+        <!-- The Modal -->
+        <div class="modal" id="myModall">
+            <div class="modal-dialog ">
+                <div class="modal-content bg-dark">
+
+                    <!-- Modal body -->
+                    <div class="modal-body text-white">
+                        تم نسخ النص
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">ok</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="form-group" style="margin-top: 10px; border: 2px solid rgb(123, 123, 236); ">
+
+
+            <textarea class="form-control" rows="5" id="comment">tranclate</textarea>
+        </div>
+    </div>
+    <div class="container-fluid " style="background-position: scroll;">
+        <img src="images/sphinx.webp" class="w-100 h-50">
+    </div>
+    <div class="container-fluid p-2 my-100 bg-info text-white" style="border: 2px solid white;">
+        <h2 style="margin-left: 450px; ">pepular destinations in egypt</h2>
+    </div>
+    <div class="container-fluid1">
+        <div class="card-content">
+            <div class="row">
+                <div class="col-lg-4 col-sm-1p-1">
+                    <div class="card-item  " style="width:300px; margin-left:100px; ">
+                        <img class="card-img-top" src="images/ssharm.jpg" alt="Card image">
+                        <div class="card-body text-info">
+                            <h4 class="card-title">sharm <a href="#" class="btn btn-primary">know more</a></h4>
+                            <p class="card-text">beautiful city in egypt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-1p-1">
+                    <div class="card-item " style="width:300px; margin-left:50px; ">
+                        <img class="card-img-top" src="images/aaswan.jpg" alt="Card image">
+                        <div class="card-body text-info">
+                            <h4 class="card-title">aswan<a href="#" class="btn btn-primary">know more</a></h4>
+                            <p class="card-text">city in the south of egypt.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-1p-1">
+                    <div class="card-item " style="width:300px; margin-left:50px; ">
+                        <img class="card-img-top" src="images/alexandria.webp" alt="Card image">
+                        <div class="card-body text-info">
+                            <h4 class="card-title">alexandria <a href="#" class="btn btn-primary">know more</a></h4>
+                            <p class="card-text">Bride of the Mediterranean.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-1p-1">
+                    <div class="card-item  " style="width:300px; margin-left:100px; ">
+                        <img class="card-img-top" src="images/aswan.webp" alt="Card image">
+                        <div class="card-body text-info">
+                            <h4 class="card-title">aswan<a href="#" class="btn btn-primary">know more</a></h4>
+                            <p class="card-text">city in the south of egypt.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-1p-1">
+                    <div class="card-item " style="width:300px; margin-left:50px; ">
+                        <img class="card-img-top" src="images/download.jpg" alt="Card image">
+                        <div class="card-body text-info">
+                            <h4 class="card-title">hurghada<a href="#" class="btn btn-primary">know more</a></h4>
+                            <p class="card-text">city in the Red Sea.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-1p-1">
+                    <div class="card-item  " style="width:300px; margin-left:50px; ">
+                        <img class="card-img-top" src="images/sphinx.webp" alt="Card image">
+                        <div class="card-body text-info">
+                            <h4 class="card-title">giza <a href="#" class="btn btn-primary">know more</a></h4>
+                            <p class="card-text">It has pyramids.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-1p-1">
+                    <div class="card-item  " style="width:300px; margin-left:250px; ">
+                        <img class="card-img-top" src="images/luxor.webp" alt="Card image">
+                        <div class="card-body text-info">
+                            <h4 class="card-title">luxor <a href="#" class="btn btn-primary">know more</a></h4>
+                            <p class="card-text">Capital of the ancient kingdom.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-1p-1">
+                    <div class="card-item  " style="width:300px; margin-left:300px; ">
+                        <img class="card-img-top" src="images/hurghada.webp" alt="Card image">
+                        <div class="card-body text-info ">
+                            <h4 class="card-title">hurghada <a href="#" class="btn btn-primary">know more</a></h4>
+                            <p class="card-text">city in the Red Sea.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid2  bg-info text-white" style="border: 2px solid white; margin-top: 1000px;;">
+        <h2 style="margin-left:600px; ">thank you</h2>
+    </div>
+    <div class="container-fluid2" style="margin-top: 40px;">
+        <div class="card-content">
+            <div class="row">
+                <div class="col-lg-4 p-1">
+                    <div class="card-item1  " style="width:300px; margin-left:100px; background-image: url(images/trainer-3.jpg); background-size: cover; border-radius: 4%; ">
+
+                        <div class="card-body text-white ">
+                            <p class="card-text " style=" font-size: 20px;">all thanks and apprecition</p>
+                            <i class="far fa-clock"> 15.oct.2023</i>
+
+
+                        </div>
+                        <div class="img text-white">
+                            <img class="card-img-top" src="images/trainer-3.jpg" alt="Card image">
+                            <h1 style="font-size: 17px;"> ahmed attaf </h1>
+                            <span style="font-size: 17px;"> Tour guide</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-1">
+                    <div class="card-item1  " style="width:300px; margin-left:100px; background-image: url(images/trainer-2.jpg);  background-size: cover;border-radius: 4%; ">
+                        <div class="card-body text-white ">
+                            <p class="card-text " style="font-size: 20px;">all thanks and apprecition</p>
+                            <i class="far fa-clock"> 15.oct.2023</i>
+
+
+                        </div>
+                        <div class="img text-white">
+                            <img class="card-img-top" src="images/trainer-2.jpg" alt="Card image">
+                            <h1 style="font-size: 17px;">dega mahmoud</h1>
+                            <span style="font-size: 17px;"> Tour guide</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-1">
+                    <div class="card-item1  " style="width:300px; margin-left:100px; background-image: url(images/trainer-3.jpg);  background-size: cover;border-radius: 4%;  ">
+
+                        <div class="card-body text-white ">
+                            <p class="card-text " style=" font-size: 20px;">all thanks and apprecition</p>
+                            <i class="far fa-clock"> 15.oct.2023</i>
+
+
+                        </div>
+                        <div class="img text-white ">
+                            <img class="card-img-top " src="images/trainer-3.jpg " alt="Card image ">
+                            <h1 style="font-size: 17px;"> ahmed attaf </h1>
+                            <span style="font-size: 17px;"> Tour guide</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2" style="margin-top:30px; width: 80%; margin-left: 150px;">
+        <div class="container-fluid2  bg-info text-white" style="border: 2px solid white; ">
+            <h2 style="margin-left:450px; ">egypt news</h2>
+        </div>
+        <div class="card mb-3" style="border-radius:1%; border: 2px solid rgb(119, 134, 201);background-color: rgb(212, 210, 210);">
+            <div class="row g-0">
+
+                <div class="col ">
+                    <div class="card-body">
+                        <h1 class="card-title text-info">podcast title</h1>
+                        <i class="far fa-clock">mon may 15th 2023</i>
+                        <hr class="dropdown-divider ">
+                        <p class="card-text text-bold">The city of AlexandriaThis was once the jewel of the Mediterranean. It is home to the Great Library of Alexandria and the huge Pharos Lighthouse – one of the seven wonders of the ancient world. More recently, from the late nineteenth
+                            century until the fifties of the twentieth century, Alexandria was the seat of an impressive group of writers, poets and artists who made the city their home.</p>
+
+                    </div>
+                    <form style="margin-left: 10px;">
+                        <button type="button" class="btn-outline-dark   ">prodcast</button>
+                        <button type="button" class="btn-outline-dark   ">55mm</button>
+                        <button type="button" class="btn-outline-dark   ">play</button>
+                    </form>
+                </div>
+
+                <div class="col">
+                    <img src="images/alexandria.webp" width="300px" height="400px" class="float-right">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2" style="margin-top:30px; width: 80%; margin-left: 150px;">
+
+        <div class="card mb-3" style="border-radius:1%; border: 2px solid rgb(119, 134, 201); background-color: rgb(223, 221, 221);">
+            <div class="row g-0">
+                <div class="col">
+                    <img src="images/download.jpg" width="300px" height="400px" class="float-left">
+                </div>
+                <div class="col" style="float: left; margin-left: -400px;">
+
+                    <div class="card-body">
+                        <h1 class="card-title text-info">podcast title</h1>
+                        <i class="far fa-clock">mon may 15th 2023</i>
+                        <hr class="dropdown-divider ">
+                        <p class="card-text text-bold">Sharm El Sheikh is the main tourist center of the Sinai Peninsula and one of the best diving destinations in the world. You can see the underwater wonders of the Red Sea – particularly the waters of Ras Mohammed Marine Park to
+                            the south of the city – that have positioned Sharm as one of Egypt's top tourist destinations, and the diving and snorkeling found here still attracts swarms of diving enthusiasts every year.</p>
+
+                    </div>
+                    <form style="margin-left: 10px;">
+                        <button type="button" class="btn-outline-dark   ">prodcast</button>
+                        <button type="button" class="btn-outline-dark   ">55mm</button>
+                        <button type="button" class="btn-outline-dark   ">play</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="container2" style="margin-top:50px; width: 80%; margin-left: 150px;">
+
+        <div class="card mb-3" style="border-radius:1%; border: 2px solid rgb(119, 134, 201); background-color: rgb(236, 234, 234);">
+            <div class="row g-0">
+
+                <div class="col ">
+                    <div class="card-body">
+                        <h1 class="card-title text-info">podcast title</h1>
+                        <i class="far fa-clock">mon may 15th 2023</i>
+                        <hr class="dropdown-divider ">
+                        <p class="card-text text-bold">Aswan City Spread along the banks of the Nile, Aswan is a cozy and friendly city that offers a tranquil space if you have just arrived from Luxor or busy Cairo. Once ancient Egypt enters Africa, the city is an ideal base for exploring
+                            the temples and monuments of the southern regions of Upper Egypt and the various Nubian culture in the region.</p>
+
+                    </div>
+                    <form style="margin-left: 10px;">
+                        <button type="button" class="btn-outline-dark   ">prodcast</button>
+                        <button type="button" class="btn-outline-dark   ">55mm</button>
+                        <button type="button" class="btn-outline-dark   ">play</button>
+                    </form>
+                </div>
+
+                <div class="col">
+                    <img src="images/alexandria.webp" width="300px" height="400px" class="float-right">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid2  text-info" style="border: 2px solid white; margin-top: 30px;;">
+        <h2 style="margin-left:600px; ">join us</h2>
+    </div>
+    <div class="container-fluid2" style="margin-top: 40px;">
+        <div class="card-content">
+            <div class="row">
+                <div class="col-lg-3 p-1">
+                    <div class="card-item2  bg-white " style="width:200px; margin-left:100px;  border-radius: 4%; border: 2px solid rgb(165, 163, 163); ">
+
+                        <div class="card-body text-info " style="text-align: center;">
+                            <p class="card-text " style=" font-size: 20px;">whacth video</p>
+
+                        </div>
+                        <div class="icon text-info" style="text-align: center;">
+                            <a href="#"> <i class="fab fa-youtube bg-dark" style="font-size: 40px; "></i></a>
+                            <h1 style="font-size: 17px;">go to the link </h1>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 p-1">
+                    <div class="card-item2 bg-white " style="width:200px; margin-left:50px; border-radius: 4%; border: 2px solid rgb(146, 144, 144); ">
+                        <div class="card-body text-info  " style="text-align: center;">
+                            <p class="card-text " style="font-size: 20px;">like the bage</p>
+
+
+                        </div>
+                        <div class="icon text-info " style="text-align: center;">
+                            <a href="#"> <i class="fab fa-linkedin bg-dark" style="font-size: 40px; "></i></a>
+
+                            <h1 style="font-size: 17px;">go to the link</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 p-1">
+                    <div class="card-item2 bg-white   " style="width:200px; margin-left:50px;border-radius: 4%; border: 2px solid rgb(175, 173, 173); ">
+                        <div class="card-body text-info  " style="text-align: center;">
+                            <p class="card-text " style="font-size: 20px;">subscribe now</p>
+                        </div>
+                        <div class="icon text-info " style="text-align: center;">
+                            <a href="#"> <i class="fab fa-twitter-square bg-dark" style="font-size: 40px; "></i></a>
+                            <h1 style="font-size: 17px;">go to the link</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 p-1">
+                    <div class="card-item2 bg-white " style="width:200px; margin-left:50px; border-radius: 4%; border: 2px solid rgb(172, 171, 171);  ">
+
+                        <div class="card-body text-info  " style="text-align: center;">
+                            <p class="card-text " style=" font-size: 20px;">follow</p>
+                        </div>
+                        <div class="icon text-info  " style="text-align: center;">
+                            <a href="#"><i class="fab fa-facebook-square bg-dark" style="font-size: 40px; "></i></a>
+                            <h1 style="font-size: 17px;"> go to the link </h1>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="containerfluid3  bg-info " style="width: 100%;height: 300px; margin-top: 30px;">
+        <div class="card-content">
+            <div class="row">
+                <div class="col-lg-4 p-1">
+                    <div class="img1">
+                        <hr>
+                        <img src="images/OIP (2).png" class="rounded-circle" alt="Cinque Terre" width="304" height="236">
+                        <p>good company</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 p-1">
+                    <div class="img1">
+                        <hr>
+                        <img src="images/OIP (2).png" class="rounded-circle" alt="Cinque Terre" width="304" height="236">
+                        <p>important links</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 p-1">
+                    <div class="img1">
+                        <hr>
+                        <img src="images/OIP (2).png" class="rounded-circle" alt="Cinque Terre" width="304" height="236">
+                        <p>virson</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-1">
+                    <div class="item text-white" style="text-align: center;">
+                        <hr style="margin-top: 10px; color: bisque;">
+                        <p>tel:00-00-00</p>
+                        <p> address:egypx</p>
+                        <p>fax:00-00-000</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-1">
+                    <div class="item" style="text-align: center;">
+                        <hr style="margin-top: 10px;">
+                        <button type="button" class="btn text-white d-block  " style="margin-left: 100px;">visit us</button>
+                        <button type="button" class="btn text-white d-block  " style="margin-left: 100px;">take alook</button>
+                        <button type="button" class="btn text-white d-block " style="margin-left: 100px;">your health is more importan</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-1">
+                    <div class="item text-white" style="text-align: center;">
+                        <hr style="margin-top: 10px;">
+                        <p>servise for all</p>
+                        <p> provide bost servise</p>
+                        <p>we will be better</p>
+                    </div>
+
+                </div>
+                <hr style="margin-top: 10px;">
+                <p style="margin-left:500px;">COPYRIGHT ©2023. ALL RIGHT RESERVED BY COLORLIB</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="js/script.js "></script>
+
+</body>
+
+</html>
